@@ -109,6 +109,8 @@ async function makePokemonCard(pokemon){
     //get info for one pokemon
     let pokemonData = null;
     try{
+        //change pokemon url to https
+        pokemon.url = pokemon.url.replace('http', 'https');
         pokemonData = await getPokemonData(pokemon.url);
     }
     catch(error){
