@@ -143,7 +143,7 @@ function showPokemonList(pokemonList){
  */
 async function makePokemonList(pokemonList){
     let pokemonObjects = [];
-    for(let i = 0; i < 150; i++){
+    for(let i = 0; i < 50; i++){
         let pokemon = pokemonList[i];
         let pokemonData = await makePokemonCard(pokemon);
         pokemonObjects.push(pokemonData);
